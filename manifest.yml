@@ -1,0 +1,9 @@
+---
+applications:
+- name: empty-rails-app
+  memory: 256M
+  instances: 1
+  path: .
+  command: bundle exec rails s -p $PORT
+  domain: 10.244.0.34.xip.io
+
